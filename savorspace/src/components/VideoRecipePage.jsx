@@ -35,7 +35,7 @@ const VideoRecipePage = () => {
     };
   
     const getImageURL = (imageURL) => {
-        if(!imageURL) return "/src/images/defaultProfiles.png";
+        if(!imageURL) return "/images/defaultProfiles.png";
 
         const cleanPath = cleanImagePath(imageURL);
         return cleanPath.startsWith('http')
@@ -343,7 +343,7 @@ const VideoRecipePage = () => {
                                 <h3>{video.title}</h3>
                                 <div className="video-creator">
                                     <img 
-                                        src={getImageURL(video.user?.imageURL) || "/src/images/defaultProfiles.png"} 
+                                        src={getImageURL(video.user?.imageURL) || "/images/defaultProfiles.png"} 
                                         alt="Creator" 
                                         className="creator-thumbnail"
                                     />
@@ -530,7 +530,7 @@ const VideoRecipePage = () => {
                                 <div className="recipe-metadata">
                                 <div className="metadata-item">
                                         <img 
-                                            src={getImageURL(selectedVideo.user?.imageURL) || "/src/images/defaultProfiles.png"} 
+                                            src={getImageURL(selectedVideo.user?.imageURL) || "/images/defaultProfiles.png"} 
                                             alt="Creator profile" 
                                             className="creator-profile-pic"
                                         />

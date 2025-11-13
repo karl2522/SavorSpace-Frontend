@@ -416,7 +416,7 @@ const Register = () => {
       </div>
       <div className="register-hero">
         <img
-          src="src/images/signup-hero.png"
+          src="/images/signup-hero.png"
           alt="Savor the flavor, Share the love"
         />
         <h3>

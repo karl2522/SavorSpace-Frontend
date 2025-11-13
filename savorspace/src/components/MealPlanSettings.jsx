@@ -11,7 +11,7 @@ const cleanImagePath = (path) => {
 };
 
 const getImageURL = (imageURL) => {
-    if (!imageURL) return "/src/images/defaultProfiles.png";
+    if (!imageURL) return "/images/defaultProfiles.png";
     const cleanPath = cleanImagePath(imageURL);
     return cleanPath.startsWith('http')
         ? cleanPath

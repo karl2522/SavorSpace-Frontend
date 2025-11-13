@@ -43,7 +43,7 @@ const Navbar = ({ profilePic, handleLogout, isAuthenticated }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showLogoutValidation, setShowLogoutValidation] = useState(false);
 
-  const defaultProfilePic = "/src/images/defaultProfiles.png";
+  const defaultProfilePic = "/images/defaultProfiles.png";
   const [imgSrc, setImgSrc] = useState(profilePic || defaultProfilePic);
 
   useEffect(() => {
@@ -99,7 +99,7 @@ const Navbar = ({ profilePic, handleLogout, isAuthenticated }) => {
       {showNavbar && (
         <nav className="navbar">
           <Link to="/" className="navbar-logo">
-            <img src="/src/images/savorspaceLogo.png" alt="SavorSpace Logo" className="navbar-logo" />
+            <img src="/images/savorspaceLogo.png" alt="SavorSpace Logo" className="navbar-logo" />
           </Link>
           <h1>
             Savor<span className='highlight'>Space</span>

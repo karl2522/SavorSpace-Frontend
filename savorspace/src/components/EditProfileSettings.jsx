@@ -33,7 +33,7 @@ const EditProfileSettings = () => {
     const [updateMessage, setUpdateMessage] = useState('');
 
     // Default profile picture
-    const defaultProfilePic = "/src/images/defaultProfiles.png";
+    const defaultProfilePic = "/images/defaultProfiles.png";
     
   // Image source
     const [imgSrc, setImgSrc] = useState(profilePic || defaultProfilePic);
